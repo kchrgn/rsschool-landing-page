@@ -4,6 +4,72 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", Helvetica;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 105%;
+}
+
+.h1-accent {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.text-body-medium {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.text-body-caption {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.text-link-and-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.text-burger-link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.text-primary {
+    color: #403F3D;
+}
+
+.text-inverse {
+    color: #E1D4C9;
+}
+
+.text-accent {
+    color: #B0907A;
+}
+
+.color-background-page {
+    background-color: #E1D4C9;
+}
+
 .logo {
  width: 100px;
  height: 60px;   
@@ -13,7 +79,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav-menu-container {
@@ -28,22 +94,12 @@
 .nav-menu-item {
     margin: 0 3vw;
     list-style-type: none;
-    font-family: Inter, Helvetica;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0%;
 }
 
 .header-actions {
     display: flex;
     justify-content: space-around;
     align-items: center;
-        font-family: Inter, Helvetica;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0%;
 }
 
 .theme-switch {
@@ -57,6 +113,37 @@
 .cofee-burger-menu {
     display: none;
     padding: 0 1vw;
+}
+
+.hero {
+    padding: 0 40px;
+}
+
+.hero-container {
+    background-image: url('../images/img-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1360;
+    height: 644;
+    max-width: 1360px;
+    border-radius: 40px;
+    padding: 100px;
+
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.button-primary {
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    padding: 20px 78px;
+    gap: 8px;
 }
 
 @media screen and (width <= 768px) {
