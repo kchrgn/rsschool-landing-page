@@ -1,0 +1,49 @@
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 105%;
+}
+
+.h1-accent {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.h1-accent, .h2-accent {
+    font-style: italic;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.text-body-medium {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.text-body-caption {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.text-link-and-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.text-burger-link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+}

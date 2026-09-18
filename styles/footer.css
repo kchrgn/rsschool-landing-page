@@ -1,0 +1,39 @@
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    padding: 100px;
+    gap: 100px;
+}
+
+.contacts-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.contacts-info-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts-info-item {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
