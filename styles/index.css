@@ -124,6 +124,9 @@ align-items: center;
 }
 
 .mobile-app-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 200px;
     height: 64px;
     padding: 12px 20px;
