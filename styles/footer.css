@@ -56,3 +56,12 @@ footer {
         justify-content: flex-start;
     }
 }
+
+@media screen and (width <=380px) {
+    .contact-us {
+        padding: 16px;
+    }
+    .contacts-container {
+        padding: 60px 16px;
+    }
+}

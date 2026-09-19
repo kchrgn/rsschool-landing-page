@@ -53,3 +53,10 @@
         display: flex;
     }
 }
+
+
+@media screen and (width <= 380px) {
+    .header-container {
+        padding: 16px;
+    }
+}
