@@ -41,3 +41,15 @@
     display: none;
     padding: 0 1vw;
 }
+
+@media screen and (width <= 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .cofee-text-menu {
+        display: none;
+    }
+    .cofee-burger-menu {
+        display: flex;
+    }
+}

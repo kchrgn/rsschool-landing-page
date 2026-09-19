@@ -1,9 +1,17 @@
+footer {
+    margin: 40px;
+}
+
+.contact-us {
+    padding: 40px;
+}
 .contacts-container {
     display: flex;
     flex-direction: row;
     border-radius: 40px;
     padding: 100px;
     gap: 100px;
+    max-width: 1360px;
 }
 
 .contacts-offer {
@@ -36,4 +44,15 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+
+@media screen and (width <= 768px) {
+    .contacts-container {
+        flex-direction: column;
+        padding: 100px 60px;
+
+    }
+    .contacts-socials {
+        justify-content: flex-start;
+    }
 }
