@@ -65,6 +65,7 @@ header, main, footer {
 
 .preview-description {
     gap: 12px;
+    color: var(--text-color-primary);
 }
 
 .description-title {

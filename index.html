@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./styles/header.css">
      <link rel="stylesheet" href="./styles/footer.css">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="color-background-page">
+<body>
     <header>
         <div class="header-container">
             <nav class="header-menu">
@@ -25,7 +25,7 @@
                     <li class="nav-menu-item"><a href="#contact-us">Contact us</a></li>
                 </ul>
                 <div class="header-actions">
-                    <div class="theme-switch">TS</div>
+                    <button id="theme-toggle" class="theme-switch">TS</button>
                     <div class="cofee-text-menu"><a href="">Menu</a></div>
                     <div class="cofee-burger-menu">Burger</div>
                 </div>
@@ -53,9 +53,9 @@
                                 <div class="slide-content">
                                     <img src="./images/coffee-slider-1.png" alt="coffee-slider-1">
                                     <div class="slide-description">
-                                        <h3>S’mores Frappuccino</h3>
-                                        <p class="text-body-medium">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                                        <h3>$5.50</h3>
+                                        <h3 class="color-text-primary">S’mores Frappuccino</h3>
+                                        <p class="color-text-primary text-body-medium">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                                        <h3 class="color-text-primary">$5.50</h3>
                                     </div>
                                 </div>
                             </div>
@@ -95,20 +95,20 @@
             <div class="mobile-app-container">
                 <div class="mobile-app-offer">
                     <h2 class="color-text-primary"><span class="h2-accent color-text-accent">Download</span> our app to start ordering</h2>
-                    <p class="text-body-medium">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>    
+                    <p class="color-text-primary text-body-medium">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>    
                     <div class="mobile-app-buttons">
                         <div class="mobile-app-button color-border-inverse">
                             <img src="./icons/apple-default-icon.png" alt="apple-icon">
                             <div>
-                                <p class="text-body-caption">Available on the</p>
-                                <p class="text-link-and-button">App Store</p>
+                                <p class="color-text-primary text-body-caption">Available on the</p>
+                                <p class="color-text-primary text-link-and-button">App Store</p>
                             </div>
                         </div>
                         <div class="mobile-app-button color-border-inverse">
                             <img src="./icons/google-default-icon.png" alt="google-icon">
                             <div>
-                                <p class="text-body-caption">Available on the</p>
-                                <p class="text-link-and-button">Google Play</p>
+                                <p class="color-text-primary text-body-caption">Available on the</p>
+                                <p class="color-text-primary text-link-and-button">Google Play</p>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
     </main>
     <footer>
         <section id="contact-us" class="contact-us" >
-            <div class="contacts-container color-background-container">
+            <div class="contacts-container">
                 <div class="contacts-offer">
                     <h2 class="color-text-inverse">Sip, Savor, Smile. <span class="h2-accent color-text-accent">It’s coffee time!</span></h2>
                     <div class="contacts-socials">
@@ -131,24 +131,25 @@
                     </div>
                 </div>
                 <div class="contacts-info">
-                    <h3>Contact us</h3>
+                    <h3 class="color-text-primary">Contact us</h3>
                     <div class="contacts-info-contacts">
                         <div class="contacts-info-item">
                             <div>Geo</div>
-                            <div>8558 Green Rd., LA</div>
+                            <a class="color-text-primary" href="https://www.google.com/maps" target="_blank">8558 Green Rd., LA</a>
                         </div>
                         <div class="contacts-info-item">
                             <div>Tel</div>
-                            <a href="">+1 (603) 555-0123</a>
+                            <a class="color-text-primary" href="tel:+1 (603) 555-0123">+1 (603) 555-0123</a>
                         </div>
                         <div class="contacts-info-item">
                             <div>Time</div>
-                            <div>Mon–Sat: 9:00–23:00</div>
+                            <div class="color-text-primary">Mon–Sat: 9:00–23:00</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </footer>    
+    </footer>
+    <script src="./script/script.js"></script>    
 </body>
 </html>
