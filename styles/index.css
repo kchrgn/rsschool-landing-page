@@ -120,6 +120,24 @@ main {
     gap: 40px;
 }
 
+.slider-button {
+    border: 1px;
+    border-color: var(--border-color-inverse);
+}
+
+.slider-button:hover {
+    background-color: var(--bg-color-container);
+}
+.slider-button-left-arrow {
+    stroke: var(--text-color-primary);
+}
+
+.slider-button-left-arrow:hover {
+    stroke: var(--text-color-inverse);
+}
+
+
+
 .slide-content {
     display: flex;
     flex-direction: column;
