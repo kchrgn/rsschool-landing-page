@@ -121,8 +121,15 @@ main {
 }
 
 .slider-button {
-    border: 1px;
-    border-color: var(--border-color-inverse);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+      border-width: 1px;
+    border-color: black;
+    border-radius: 50%;
+    border-style: solid;
 }
 
 .slider-button:hover {
@@ -132,7 +139,7 @@ main {
     stroke: var(--text-color-primary);
 }
 
-.slider-button-left-arrow:hover {
+.slider-button:hover .slider-button-left-arrow {
     stroke: var(--text-color-inverse);
 }
 
