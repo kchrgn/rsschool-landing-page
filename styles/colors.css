@@ -7,6 +7,11 @@
     --text-color-accent: #B0907A;
     --border-color-primary: #C1B6AD;
     --border-color-inverse: #665F55;
+    --logo-img: url('../icons/logo-light.png');
+    --sun-color-button: #B0907A;
+    --moon-color-button: transparent;
+    --sun-color-button-hover: #B0907A;
+    --moon-color-button-hover: #665F55;
 }
 
 .dark {
@@ -18,6 +23,11 @@
     --text-color-accent: #B0907A;
     --border-color-primary: #665F55;
     --border-color-inverse: #C1B6AD;
+    --logo-img: url('../icons/logo-dark.png');
+    --sun-color-button: transparent;
+    --moon-color-button: #B0907A;
+    --sun-color-button-hover: #665F55;
+    --moon-color-button-hover: #B0907A;
 }
 
 .color-text-primary {

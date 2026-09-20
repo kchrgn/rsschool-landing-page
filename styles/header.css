@@ -1,6 +1,7 @@
 .logo {
  width: 100px;
- height: 60px;   
+ height: 60px;
+ background-image: var(--logo-img); 
 }
 
 .header-container {
@@ -34,7 +35,42 @@
 }
 
 .theme-switch {
-    padding: 0 1vw;
+    display: flex;
+    border-radius: 100px;
+    border: 2px solid var(--border-color-primary);
+    border-width: 1px;
+}
+
+.sun-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--sun-color-button);
+    border-radius: 18px;
+}
+
+.moon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: var(--moon-color-button);
+}
+
+.theme-switch:hover .sun-button {
+    background-color: var(--sun-color-button-hover);
+}
+
+.theme-switch:hover .moon-button {
+    background-color: var(--moon-color-button-hover);   
+}
+
+.theme-switch:hover {
+
 }
 
 .cofee-text-menu {
