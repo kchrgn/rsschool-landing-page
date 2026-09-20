@@ -25,6 +25,11 @@ body {
  
 }
 
+a {
+  all: unset;
+  cursor: pointer; 
+}
+
 header, main, footer {
     width: 100%;
 }
@@ -56,11 +61,32 @@ main {
 }
 
 .button-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 200px;
     height: 64px;
     border-radius: 100px;
     padding: 20px 78px;
     gap: 8px;
+    cursor: pointer;
+}
+
+.primary-button-cup {
+    display: none;
+}
+
+.primary-button-cup-dark {
+    display: none;
+}
+
+
+.button-primary:hover .primary-button-cup {
+    display: var(--cup-img-display);
+}
+
+.button-primary:hover .primary-button-cup-dark {
+    display: var(--cup-img-dark-display);
 }
 
 .favorite-coffee {

@@ -1,4 +1,5 @@
 const toggleButton = document.getElementById('theme-toggle');
+const primaryButton = document.getElementById('primary-button');
 const body = document.body;
 
 if (localStorage.getItem('currentTheme') === 'dark') body.classList.add('dark');
@@ -11,3 +12,8 @@ toggleButton.addEventListener('click', () => {
         localStorage.setItem('currentTheme', 'light');
     }
 })
+
+primaryButton.addEventListener('click', () => {
+     location.href = 'catalog.html';
+} )
+
