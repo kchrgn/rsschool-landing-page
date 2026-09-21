@@ -31,6 +31,7 @@
     --moon-color-button: #B0907A;
     --sun-color-button-hover: #665F55;
     --moon-color-button-hover: #B0907A;
+    --menu-cup-img: url('../icons/coffee-cup-dark.png');
     --cup-img-display: none;
     --cup-img-dark-display: block;
 }

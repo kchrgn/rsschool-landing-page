@@ -1,17 +1,11 @@
 * {
   padding: 0;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 body {
@@ -19,9 +13,8 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "Inter", Helvetica;
-    max-width: 1440px;
-    margin: 0   auto;
     background-color: var(--bg-color-page);
+    width: 100%;
  }
 
 a {
@@ -31,9 +24,7 @@ a {
 
 header, main, footer {
     width: 100%;
-}
-
-main {
+    max-width: 1440px;
 }
 
 .hero {
@@ -116,13 +107,14 @@ main {
     justify-content: space-between;
     width: 100%;
     max-width: 1360px;
-    gap: 40px;
+    gap: 20px;
 }
 
 .slider-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 60px;
     width: 60px;
     height: 60px;
     border-width: 1px;
