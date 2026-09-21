@@ -1,17 +1,11 @@
 * {
   padding: 0;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 body {
@@ -19,9 +13,8 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "Inter", Helvetica;
-    max-width: 1440px;
-    margin: 0   auto;
     background-color: var(--bg-color-page);
+    width: 100%;
  }
 
 a {
@@ -31,9 +24,7 @@ a {
 
 header, main, footer {
     width: 100%;
-}
-
-main {
+    max-width: 1440px;
 }
 
 .hero {
@@ -116,19 +107,21 @@ main {
     justify-content: space-between;
     width: 100%;
     max-width: 1360px;
-    gap: 40px;
+    gap: 20px;
 }
 
 .slider-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 60px;
     width: 60px;
     height: 60px;
     border-width: 1px;
     border-color: var(--border-color-inverse);
     border-radius: 50%;
     border-style: solid;
+    cursor: pointer;
 }
 
 .slider-button:hover {
@@ -172,6 +165,24 @@ main {
     flex-direction: column;
     align-items: center; 
     gap: 20px;  
+}
+
+.slider-control {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    gap: 10px;
+}
+
+.control {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: var(--border-color-primary);
+}
+
+.control-active {
+    background-color: var(--border-color-inverse);
 }
 
 .about {
@@ -225,17 +236,47 @@ main {
 display: flex;
 flex-direction: row;
 align-items: center;
+gap: 20px;
 }
 
 .mobile-app-button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
     width: 200px;
     height: 64px;
     padding: 12px 20px;
     border-radius: 100px;
     border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-color-inverse);
+    color: var(--text-color-primary);
+}
+
+.mobile-app-button:hover {
+    background-color: var(--bg-color-container);
+    color: var(--text-color-inverse);
+}
+
+.mobile-app-button:hover .apple-mobile-app-button-icon{
+    background-image: var(--apple-app-img-hover);
+}
+
+.mobile-app-button:hover .google-mobile-app-button-icon{
+    background-image: var(--google-app-img-hover);
+}
+
+.apple-mobile-app-button-icon {
+    width: 36px;
+    height: 36px;
+    background-image: var(--apple-app-img);
+}
+
+.google-mobile-app-button-icon {
+    width: 36px;
+    height: 36px;
+    background-image: var(--google-app-img);
 }
 
 .mobile-app-screens img {

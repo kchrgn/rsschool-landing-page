@@ -13,8 +13,16 @@
     --sun-color-button-hover: #B0907A;
     --moon-color-button-hover: #665F55;
     --menu-cup-img: url('../icons/coffee-cup.png');
+    --burger-menu-img: url('../icons/burger-menu.png');
+    --apple-app-img: url('../icons/apple-default-icon.png');
+    --google-app-img: url('../icons/google-default-icon.png');
+    --apple-app-img-hover: url('../icons/apple-default-icon-dark.png');
+    --google-app-img-hover: url('../icons/google-default-icon-dark.png');
     --cup-img-display: block;
     --cup-img-dark-display: none;
+    --bg-color-social-hover: #E1D4C9;
+    --stroke-color-social: #E1D4C9;
+    --stroke-color-social-hover: #403F3D;
 }
 
 .dark {
@@ -31,8 +39,17 @@
     --moon-color-button: #B0907A;
     --sun-color-button-hover: #665F55;
     --moon-color-button-hover: #B0907A;
+    --menu-cup-img: url('../icons/coffee-cup-dark.png');
+    --burger-menu-img: url('../icons/burger-menu-dark.png');
+    --apple-app-img: url('../icons/apple-default-icon-dark.png');
+    --google-app-img: url('../icons/google-default-icon-dark.png');
+    --apple-app-img-hover: url('../icons/apple-default-icon-dark.png');
+    --google-app-img-hover: url('../icons/google-default-icon-dark.png');
     --cup-img-display: none;
     --cup-img-dark-display: block;
+    --bg-color-social-hover: #292826;
+    --stroke-color-social: #E1D4C9;
+    --stroke-color-social-hover: #E1D4C9;
 }
 
 .color-text-primary {
