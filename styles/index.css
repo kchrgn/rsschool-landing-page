@@ -22,8 +22,7 @@ body {
     max-width: 1440px;
     margin: 0   auto;
     background-color: var(--bg-color-page);
- 
-}
+ }
 
 a {
   all: unset;
@@ -126,16 +125,23 @@ main {
     justify-content: center;
     width: 60px;
     height: 60px;
-      border-width: 1px;
-    border-color: black;
+    border-width: 1px;
+    border-color: var(--border-color-inverse);
     border-radius: 50%;
     border-style: solid;
 }
 
 .slider-button:hover {
     background-color: var(--bg-color-container);
+    border-color: var(--bg-color-container);
 }
+
 .slider-button-left-arrow {
+    stroke: var(--text-color-primary);
+    transform: rotate(180deg);
+}
+
+.slider-button-right-arrow {
     stroke: var(--text-color-primary);
 }
 
@@ -143,7 +149,9 @@ main {
     stroke: var(--text-color-inverse);
 }
 
-
+.slider-button:hover .slider-button-right-arrow {
+    stroke: var(--text-color-inverse);
+}
 
 .slide-content {
     display: flex;
@@ -165,9 +173,6 @@ main {
     align-items: center; 
     gap: 20px;  
 }
-
-
-
 
 .about {
     padding: 40px;
