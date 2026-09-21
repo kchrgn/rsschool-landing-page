@@ -18,20 +18,33 @@ footer {
 .contacts-offer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 
 .contacts-socials {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 40px 0;
     gap: 12px;
+}
+
+.contacts-socials-img {
+    cursor: pointer;
+    stroke: var(--stroke-color-social);
+}
+
+.contacts-socials-img:hover {
+    background-color: var(--bg-color-container);
+    fill: var(--bg-color-social-hover);
+    stroke: var(--stroke-color-social-hover);
 }
 
 .contacts-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     gap: 40px;
 }
 

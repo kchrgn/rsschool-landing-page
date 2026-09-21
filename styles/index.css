@@ -236,17 +236,47 @@ header, main, footer {
 display: flex;
 flex-direction: row;
 align-items: center;
+gap: 20px;
 }
 
 .mobile-app-button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
     width: 200px;
     height: 64px;
     padding: 12px 20px;
     border-radius: 100px;
     border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-color-inverse);
+    color: var(--text-color-primary);
+}
+
+.mobile-app-button:hover {
+    background-color: var(--bg-color-container);
+    color: var(--text-color-inverse);
+}
+
+.mobile-app-button:hover .apple-mobile-app-button-icon{
+    background-image: var(--apple-app-img-hover);
+}
+
+.mobile-app-button:hover .google-mobile-app-button-icon{
+    background-image: var(--google-app-img-hover);
+}
+
+.apple-mobile-app-button-icon {
+    width: 36px;
+    height: 36px;
+    background-image: var(--apple-app-img);
+}
+
+.google-mobile-app-button-icon {
+    width: 36px;
+    height: 36px;
+    background-image: var(--google-app-img);
 }
 
 .mobile-app-screens img {
