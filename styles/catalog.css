@@ -29,6 +29,12 @@ h1 {
     line-height: 125%;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
 .menu-container {
     padding: 0 40px;
     gap: 40px;
