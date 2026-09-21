@@ -121,6 +121,7 @@ header, main, footer {
     border-color: var(--border-color-inverse);
     border-radius: 50%;
     border-style: solid;
+    cursor: pointer;
 }
 
 .slider-button:hover {
@@ -164,6 +165,24 @@ header, main, footer {
     flex-direction: column;
     align-items: center; 
     gap: 20px;  
+}
+
+.slider-control {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    gap: 10px;
+}
+
+.control {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: var(--border-color-primary);
+}
+
+.control-active {
+    background-color: var(--border-color-inverse);
 }
 
 .about {

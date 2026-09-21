@@ -13,6 +13,7 @@
     --sun-color-button-hover: #B0907A;
     --moon-color-button-hover: #665F55;
     --menu-cup-img: url('../icons/coffee-cup.png');
+    --burger-menu-img: url('../icons/burger-menu.png');
     --cup-img-display: block;
     --cup-img-dark-display: none;
 }
@@ -32,6 +33,7 @@
     --sun-color-button-hover: #665F55;
     --moon-color-button-hover: #B0907A;
     --menu-cup-img: url('../icons/coffee-cup-dark.png');
+    --burger-menu-img: url('../icons/burger-menu-dark.png');
     --cup-img-display: none;
     --cup-img-dark-display: block;
 }
