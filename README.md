@@ -1,2 +1,2 @@
 # rsschool-landing-page
-Landing Page Part 1
+Landing Page Part 2
