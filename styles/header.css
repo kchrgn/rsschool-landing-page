@@ -25,6 +25,7 @@ a {
 }
 
 .nav-menu { 
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -152,6 +153,18 @@ a {
     background-position: center;
 }
 
+.burger-menu-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    max-height: 0;
+    width: 100%;
+    top: 100px;
+    background-color: brown;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+}
+
 @media screen and (width <= 768px) {
     .nav-menu {
         display: none;
@@ -161,6 +174,11 @@ a {
     }
     .cofee-burger-menu {
         display: flex;
+    }
+    .burger-menu-content {
+        overflow: hidden;
+        transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+        max-height: calc(100dvh - 100px);
     }
 }
 
