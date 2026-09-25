@@ -13,7 +13,8 @@
     --sun-color-button-hover: #B0907A;
     --moon-color-button-hover: #665F55;
     --menu-cup-img: url('../icons/coffee-cup.png');
-    --burger-menu-img: url('../icons/burger-menu.png');
+    --burger-menu-open-img: url('../icons/burger-menu-open.png');
+    --burger-menu-close-img: url('../icons/burger-menu-close.png');
     --apple-app-img: url('../icons/apple-default-icon.png');
     --google-app-img: url('../icons/google-default-icon.png');
     --apple-app-img-hover: url('../icons/apple-default-icon-dark.png');
@@ -40,7 +41,8 @@
     --sun-color-button-hover: #665F55;
     --moon-color-button-hover: #B0907A;
     --menu-cup-img: url('../icons/coffee-cup-dark.png');
-    --burger-menu-img: url('../icons/burger-menu-dark.png');
+    --burger-menu-open-img: url('../icons/burger-menu-open-dark.png');
+    --burger-menu-close-img: url('../icons/burger-menu-close-dark.png');
     --apple-app-img: url('../icons/apple-default-icon-dark.png');
     --google-app-img: url('../icons/google-default-icon-dark.png');
     --apple-app-img-hover: url('../icons/apple-default-icon-dark.png');

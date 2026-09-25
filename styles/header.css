@@ -3,6 +3,15 @@ a {
   cursor: pointer; 
 }
 
+header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+
 .logo {
  width: 100px;
  height: 60px;
@@ -148,21 +157,47 @@ a {
     border-radius: 50%;
     border-style: solid;
     cursor: pointer;
-    background-image: var(--burger-menu-img);
+    background-image: var(--burger-menu-open-img);
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.coffee-burger-menu-close {
+    background-image: var(--burger-menu-close-img);
+}
+
 .burger-menu-content {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: absolute;
-    max-height: 0;
     width: 100%;
+    height: 0;
     top: 100px;
-    background-color: brown;
-    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    left: 0;
+    color: var(--text-color-primary);
+    background-color: var(--bg-color-page);
+    z-index: 99;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.burger-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.burger-menu-active {
+    height: calc(100dvh - 100px);
+}
+
+.body-scroll-disable {
+    overflow: hidden;
 }
 
 @media screen and (width <= 768px) {
@@ -174,11 +209,6 @@ a {
     }
     .cofee-burger-menu {
         display: flex;
-    }
-    .burger-menu-content {
-        overflow: hidden;
-        transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
-        max-height: calc(100dvh - 100px);
     }
 }
 
