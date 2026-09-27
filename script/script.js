@@ -12,23 +12,22 @@ toggleButton.addEventListener('click', () => {
     }
 })
 
-const burgerMenuButton = document.getElementById('burger-menu')
+const burgerMenuButton = document.getElementById('burger-menu-button')
 const burgerMenuContent = document.getElementById('burger-menu-content')
 
 burgerMenuButton.addEventListener('click', () => {
-    burgerMenuButton.classList.toggle('coffee-burger-menu-close');
-    burgerMenuContent.classList.toggle('burger-menu-active');
+    burgerMenuButton.classList.toggle('open');
+    burgerMenuContent.classList.toggle('open');
     body.classList.toggle('body-scroll-disable');
 })
 
 burgerMenuContent.addEventListener('click', (event) => {
-    console.log(event.target.tagName)
     if (event.target.tagName === 'A') closeBurgerMenu();
 })
 
 function closeBurgerMenu () {
-    burgerMenuButton.classList.remove('coffee-burger-menu-close');
-    burgerMenuContent.classList.remove('burger-menu-active');
+    burgerMenuButton.classList.remove('open');
+    burgerMenuContent.classList.remove('open');
     body.classList.remove('body-scroll-disable')
 }
 
