@@ -101,6 +101,7 @@ header, main, footer {
 }
 
 .slider {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -108,6 +109,18 @@ header, main, footer {
     width: 100%;
     max-width: 1360px;
     gap: 20px;
+        margin: 0 auto;;
+}
+
+.slider-viewport {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slide-track {
+    display: flex;
 }
 
 .slider-button {
@@ -146,17 +159,19 @@ header, main, footer {
     stroke: var(--text-color-inverse);
 }
 
+
 .slide-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    max-width: 480px;
-    gap: 20px;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
 }
 
 .slide-content img {
+    display: block;
     width: 100%;
     height: auto;
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 
