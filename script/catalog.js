@@ -1,4 +1,6 @@
-
+const coffeeSelector = document.getElementById('coffee-selector');
+const teaSelector = document.getElementById('tea-selector');
+const dessertSelector = document.getElementById('dessert-selector');
 
 const menuList = document.getElementById('menu-list');
 
@@ -7,7 +9,7 @@ async function renderCards (filter) {
         const response = await fetch('../data/products.json');
         const data = await response.json();
 
-        menuList.innerHTML += data.filter(item => item.category === filter ).map ((item, index) => `
+        menuList.innerHTML = data.filter(item => item.category === filter ).map ((item, index) => `
             <div class="grid-preview">
                 <div class="preview-box">
                     <img src="./images/${item.category}-${index+1}.png" alt="coffee-1">
@@ -25,5 +27,28 @@ async function renderCards (filter) {
         console.log('Load data error', error);
     }
 }
+renderCards('coffee');
 
-renderCards('dessert');
+coffeeSelector.addEventListener('click', () => {
+    coffeeSelector.classList.add('tab-item-active');
+    teaSelector.classList.remove('tab-item-active')
+    dessertSelector.classList.remove('tab-item-active')
+    renderCards('coffee');
+})
+teaSelector.addEventListener('click', () => {
+    coffeeSelector.classList.remove('tab-item-active');
+    teaSelector.classList.add('tab-item-active')
+    dessertSelector.classList.remove('tab-item-active')
+    renderCards('tea');
+})
+dessertSelector.addEventListener('click', () => {
+    coffeeSelector.classList.remove('tab-item-active');
+    teaSelector.classList.remove('tab-item-active')
+    dessertSelector.classList.add('tab-item-active')
+    renderCards('dessert');
+})
+
+
+
+
+
