@@ -100,8 +100,25 @@ h2 {
     color: var(--text-color-primary);
 }
 
-.description-title {
+.button-all-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    border: 1px solid var(--border-color-primary);
+    cursor: pointer;
+    margin-top: 40px;
+    color: var(--text-color-primary);
+}
 
+.button-all-cards-icon {
+    stroke: var(--text-color-primary);
+}
+
+.disable {
+    display: none;
 }
 
 @media screen and (width <=768px) {

@@ -1,6 +1,7 @@
 const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
 
+
 if (localStorage.getItem('currentTheme') === 'dark') body.classList.add('dark');
 
 toggleButton.addEventListener('click', () => {
