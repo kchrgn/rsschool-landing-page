@@ -20,7 +20,7 @@ allCardsButton.addEventListener('click', () => {
 
 async function renderCards (filter, count) {
     try {
-        const response = await fetch('../assets/products.json', {mode: 'cors'});
+        const response = await fetch('assets/products.json');
         const data = await response.json();
 
         menuList.innerHTML = data.filter(item => item.category === filter ).map ((item, index) => {
