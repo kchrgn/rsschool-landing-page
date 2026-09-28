@@ -121,6 +121,17 @@ h2 {
     display: none;
 }
 
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+}
+
 @media screen and (width <=768px) {
     .menu-grid {
         grid-template-columns: 1fr 1fr;

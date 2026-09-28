@@ -20,7 +20,7 @@ allCardsButton.addEventListener('click', () => {
 
 async function renderCards (filter, count) {
     try {
-        const response = await fetch('../products.json');
+        const response = await fetch('../assets/products.json', {mode: 'cors'});
         const data = await response.json();
 
         menuList.innerHTML = data.filter(item => item.category === filter ).map ((item, index) => {
@@ -77,6 +77,12 @@ window.addEventListener('resize', () => {
         numCardsForRender = 8;
         renderCards(filter, numCardsForRender);;
     }
+})
+
+const modalCard = document.getElementById('modalCard');
+
+menuList.addEventListener('click', () => {
+    modalCard.showModal();
 })
 
 
