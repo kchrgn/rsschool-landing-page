@@ -3,6 +3,15 @@ a {
   cursor: pointer; 
 }
 
+header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+
 .logo {
  width: 100px;
  height: 60px;
@@ -25,6 +34,7 @@ a {
 }
 
 .nav-menu { 
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -135,21 +145,83 @@ a {
     background-image: var(--menu-cup-img);
 }
 
-.cofee-burger-menu {
+.burger-menu-button {
     display: none;
     align-items: center;
     justify-content: center;
-    min-width: 44px;
     width: 44px;
     height: 44px;
+    border-radius: 100px;
+    border: 2px solid var(--border-color-primary);
     border-width: 1px;
-    border-color: var(--border-color-inverse);
-    border-radius: 50%;
-    border-style: solid;
     cursor: pointer;
-    background-image: var(--burger-menu-img);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.burger-menu-icon {
+    display: block;
+    position: relative;
+    background: none;
+    width: 16px;
+    height: 0px;
+    transition: background 0.3s ease-in-out;
+}
+
+.burger-menu-icon::before, 
+.burger-menu-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 1px;
+    background: var(--border-color-inverse);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.burger-menu-icon::before { top: -5px }
+.burger-menu-icon::after { top: 3px }
+
+.burger-menu-button.open .burger-menu-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.burger-menu-button.open .burger-menu-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.burger-menu-content {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    top: 100px;
+    left: 0;
+    color: var(--text-color-primary);
+    background-color: var(--bg-color-page);
+    z-index: 99;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.burger-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.burger-menu-content.open {
+    height: calc(100dvh - 100px);
+}
+
+.body-scroll-disable {
+    overflow: hidden;
 }
 
 @media screen and (width <= 768px) {
@@ -159,7 +231,7 @@ a {
     .cofee-text-menu {
         display: none;
     }
-    .cofee-burger-menu {
+    .burger-menu-button {
         display: flex;
     }
 }

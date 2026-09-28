@@ -100,8 +100,36 @@ h2 {
     color: var(--text-color-primary);
 }
 
-.description-title {
+.button-all-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    border: 1px solid var(--border-color-primary);
+    cursor: pointer;
+    margin-top: 40px;
+    color: var(--text-color-primary);
+}
 
+.button-all-cards-icon {
+    stroke: var(--text-color-primary);
+}
+
+.disable {
+    display: none;
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
 }
 
 @media screen and (width <=768px) {
