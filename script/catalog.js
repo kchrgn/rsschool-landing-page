@@ -20,7 +20,7 @@ allCardsButton.addEventListener('click', () => {
 
 async function renderCards (filter, count) {
     try {
-        const response = await fetch('../data/products.json');
+        const response = await fetch('../products.json');
         const data = await response.json();
 
         menuList.innerHTML = data.filter(item => item.category === filter ).map ((item, index) => {
